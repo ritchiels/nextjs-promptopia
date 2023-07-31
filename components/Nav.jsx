@@ -7,7 +7,7 @@ import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
 //using these features of next-auth will mike the sing-in/sign-out simpler
 
 const Nav = () => {
-    const { data: session } = useSession;
+    const { data: session } = useSession();
 
     const [providers, setProviders] = useState(null);
     const [toggleDropdown, setToggleDropdown] = useState(false);
