@@ -60,4 +60,4 @@ const Feed = () => {
 export default Feed
 
 //receive prompts using GET request 
-//search next
+//update
