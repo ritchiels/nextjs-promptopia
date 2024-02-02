@@ -5,6 +5,16 @@ export const GET = async (request) => {
     try {
         await connectToDB();
 
+        const { search } = request.query;
+
+        const query = {};
+
+        if (search) {
+            query.$or = [
+
+            ];
+        }
+
         const prompts = await Prompt.find({}).populate('creator');
 
         return new Response(JSON.stringify(prompts), { status: 200 })
