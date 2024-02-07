@@ -24,4 +24,4 @@ export const GET = async (request) => {
 }
 
 //await Prompt.find({}).populate('creator'); {} finds ALL posts, and will show creator name
-//searching
+//search feat
