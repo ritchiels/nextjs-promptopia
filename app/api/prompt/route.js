@@ -11,7 +11,9 @@ export const GET = async (request) => {
 
         if (search) {
             query.$or = [
-
+                // content
+                // username
+                // tags
             ];
         }
 
