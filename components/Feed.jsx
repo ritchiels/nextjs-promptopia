@@ -60,4 +60,4 @@ const Feed = () => {
 export default Feed
 
 //receive prompts using GET request 
-//updated
+//use URIComponent to handle special characters in search text
