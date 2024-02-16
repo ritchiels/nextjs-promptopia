@@ -11,9 +11,9 @@ export const GET = async (request) => {
 
         if (search) {
             query.$or = [
-                // content
-                // username
-                // tags
+                { creator: { $regex: new RegExp(search, 'i') } },
+                { prompt: { $regex: new RegExp(search, 'i') } },
+                { tag: { $regex: new RegExp(search, 'i') } },
             ];
         }
 
@@ -26,4 +26,4 @@ export const GET = async (request) => {
 }
 
 //await Prompt.find({}).populate('creator'); {} finds ALL posts, and will show creator name
-//search feat
+//search feat done
