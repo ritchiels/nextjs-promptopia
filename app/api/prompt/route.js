@@ -26,4 +26,4 @@ export const GET = async (request) => {
 }
 
 //await Prompt.find({}).populate('creator'); {} finds ALL posts, and will show creator name
-//search feat done
+//search feat finished
