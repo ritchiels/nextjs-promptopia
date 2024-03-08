@@ -61,4 +61,4 @@ export default Feed
 
 //receive prompts using GET request 
 //use URIComponent to handle special characters in search text
-//streak
+//streakin
